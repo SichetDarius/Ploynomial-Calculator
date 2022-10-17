@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="inputMessage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="478.0" prefWidth="600.0" style=" -fx-background-color: #767E7F; -fx-border-color: #F3BA39;"
+      xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.aaaa.controller.TheController">
+    <children>
+        <Label layoutX="187.0" layoutY="48.0" prefHeight="40.0" prefWidth="226.0" text="Polynomial Calculator"
+               textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="20.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="firstPolynomialField" layoutX="198.0" layoutY="135.0" prefHeight="25.0" prefWidth="315.0"
+                   style="-fx-background-color: #BEBEBC;"/>
+        <TextField fx:id="secondPolynomialField" layoutX="198.0" layoutY="172.0" prefHeight="25.0" prefWidth="315.0"
+                   style="-fx-background-color: #BEBEBC;"/>
+        <Button fx:id="additionButton" layoutX="81.0" layoutY="282.0" mnemonicParsing="false"
+                onAction="#onAdditionButtonClick" prefHeight="37.0" prefWidth="168.0"
+                style="-fx-background-color: #F3BA39;" text="Addition">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Button>
+        <TextField fx:id="resultField" layoutX="110.0" layoutY="212.0" prefHeight="25.0" prefWidth="403.0"
+                   style="-fx-background-color: #BEBEBC;"/>
+        <Button fx:id="subtractionButton" layoutX="336.0" layoutY="282.0" mnemonicParsing="false"
+                onAction="#onSubtractionButtonClick" prefHeight="37.0" prefWidth="177.0"
+                style="-fx-background-color: #F3BA39;" text="Subtraction">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Button fx:id="multiplicationButton" layoutX="81.0" layoutY="337.0" mnemonicParsing="false"
+                onAction="#onMultiplicationButtonClick" prefHeight="37.0" prefWidth="168.0"
+                style="-fx-background-color: #F3BA39;" text="Multiplication">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Button fx:id="divisionButton" layoutX="336.0" layoutY="337.0" mnemonicParsing="false"
+                onAction="#onDivisionButtonClick" prefHeight="37.0" prefWidth="177.0"
+                style="-fx-background-color: #F3BA39;" text="Division">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Button fx:id="dervativeButton" layoutX="82.0" layoutY="394.0" mnemonicParsing="false"
+                onAction="#onDerivativeButtonClick" prefHeight="39.0" prefWidth="168.0"
+                style="-fx-background-color: #F3BA39;" text="Derivative">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Button fx:id="integrateButton" layoutX="336.0" layoutY="394.0" mnemonicParsing="false"
+                onAction="#onIntegrateButtonClick" prefHeight="37.0" prefWidth="177.0"
+                style="-fx-background-color: #F3BA39;" text="Integrate">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Button>
+        <Label layoutX="53.0" layoutY="137.0" text="First Polynomial:">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="174.0" text="Second Polynomial:">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="214.0" text="Result:">
+            <font>
+                <Font name="System Bold" size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="wrongIputMessage" layoutX="229.0" layoutY="248.0" text="Wrong input provided!" textFill="#fd0000">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Label>
+    </children>
+</Pane>
